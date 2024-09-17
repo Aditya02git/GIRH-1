@@ -11,7 +11,7 @@ function Banner() {
     }
     if (window.innerWidth <= 480) {
       // For mobile screens
-      scrollPosition = 1400;
+      scrollPosition = 1350;
     }
 
     window.scrollTo({

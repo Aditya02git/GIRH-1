@@ -1,21 +1,27 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 function AboutPage() {
+
+  useEffect(() => {
+    // Scroll to top on component mount
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="bg-[url('/img1.png')] bg-cover md:bg-center bg-[right] bg-fixed absolute top-0 left-0 w-full h-full z-0 dark:bg-[url('/img2.png')] dark:bg-cover md:dark:bg-[center_top] dark:bg-[right] dark:bg-fixed pt-10">
         <Navbar />
 
         <div className="max-w-screen-lg mx-auto p-4 my-10 mt-[70px]">
-          <h1 className="md:text-4xl text-2xl font-bold mb-4 text-center dark:text-black text-black animate-pulse" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}>
+          <h1 className="md:text-4xl text-2xl font-bold mb-4 text-center dark:text-black text-black" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}>
             About Us
           </h1>
           <hr className='pt-[20px] pb-[20px] border-black'/>
 
           <section className="md:space-y-6 space-y-2 dark:text-black text-black md:text-[14px] text-[10px]">
-            <h2 className="text-xl font-semibold animate-fadeIn">
+            <h2 className="text-2xl font-semibold animate-fadeIn">
               Our Mission
             </h2>
             <p className="text-gray-700 animate-slideIn">

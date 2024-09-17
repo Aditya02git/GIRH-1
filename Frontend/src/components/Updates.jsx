@@ -7,7 +7,7 @@ const Updates = () => {
       {/* News & Updates Section */}
       
       <section className="news-updates dark:bg-slate-800">
-        <h2 className='text-center pb-[20px] text-3xl font-bold text-black dark:text-white'>News <span className='text-pink-500'>&</span> Updates<span className='text-pink-500'>...</span></h2>
+        <h2 className='text-center pb-[20px] text-3xl font-bold text-black dark:text-white animate-pulse'>News <span className='text-pink-500'>&</span> Updates<span className='text-pink-500'>...</span></h2>
         <div className="news-grid text-black dark:text-black">
           <div className="news-item">
             <h3>Latest Announcements</h3>
@@ -31,6 +31,21 @@ const Updates = () => {
           </div>
         </div>
       </section>
+
+            {/* Keyframe Animations */}
+            <style jsx>{`
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      `}</style>
 
 
     </>

@@ -44,13 +44,13 @@ const Login = () => {
                 </svg>
                 <input type="password" className="flex-grow bg-white text-black" placeholder="Password" />
             </label>
-
+            <Link to='/signup'><span className=' text-blue-500 cursor-pointer hover:text-black dark:hover:text-white'>Forget password?</span></Link>
 
             </div>
             <div>
             <button className="bg-black dark:bg-white dark:text-black text-white px-3 py-2 rounded-md hover:bg-slate-800 dark:hover:bg-gray-300 duration-300 cursor-pointer border-2 border-slate-600">Let's go</button>
             <div className='flex justify-around mt-4 text-black dark:text-white'>
-                <p>Not registered? <Link to='/signup'><span className='underline text-blue-500 cursor-pointer'onClick={()=>
+                <p>Not registered? <Link to='/signup'><span className=' text-blue-500 cursor-pointer hover:underline'onClick={()=>
                 document.getElementById("my_modal_3").close()}>Sign Up</span></Link></p>
             </div>
             </div>

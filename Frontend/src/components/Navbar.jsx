@@ -39,10 +39,10 @@ function Navbar() {
   }, []);
   const navItems = (
     <>
-      <Link to="/"><li><a >Home</a></li></Link>
-      <Link to="/contact"><li><a >Contact</a></li></Link>
-      <Link to="/aboutus"><li><a >About Us</a></li></Link>
-      <Link to="/license"><li><a >License</a></li></Link>
+      <Link to="/"><li><a className="hover:animate-pulse hover:bg-slate-300 dark:hover:bg-pink-500">Home</a></li></Link>
+      <Link to="/contact"><li><a className="hover:animate-pulse hover:bg-slate-300 dark:hover:bg-pink-500">Contact</a></li></Link>
+      <Link to="/aboutus"><li><a className="hover:animate-pulse hover:bg-slate-300 dark:hover:bg-pink-500">About Us</a></li></Link>
+      <Link to="/license"><li><a className="hover:animate-pulse hover:bg-slate-300 dark:hover:bg-pink-500">License</a></li></Link>
     </>
   );
   return (
@@ -89,7 +89,7 @@ function Navbar() {
 
             </div>
 
-            <a className=" md:text-2xl font-bold cursor-pointer text-[15px] md:w-[300px] w-[2000px]  text-black dark:text-white">Gujrat Research & Innovation-Hub</a>
+            <Link to={"/"}><a className=" md:text-2xl font-bold cursor-pointer text-[15px] md:w-[300px] w-[2000px]  text-black dark:text-white">Gujrat Research & Innovation-Hub</a></Link>
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex ">
@@ -163,6 +163,21 @@ function Navbar() {
           </div>
         </div>
       </div>
+
+            {/* Keyframe Animations */}
+            <style jsx>{`
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      `}</style>
     </>
   );
 }
