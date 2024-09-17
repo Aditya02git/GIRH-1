@@ -242,7 +242,7 @@ const FundingRequest = () => {
           {/* Success Popup */}
           {showPopup && (
             <div className="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <div className="bg-white p-6 rounded shadow-lg text-center">
+              <div className="bg-white text-black dark:bg-slate-800 dark:text-white p-6 rounded shadow-lg text-center">
                 <p className="text-xl font-semibold">Funding Request Submitted!</p>
                 <p className="mt-2">You will receive a confirmation email shortly.</p>
                 <button

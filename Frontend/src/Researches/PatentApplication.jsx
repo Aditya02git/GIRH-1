@@ -289,7 +289,7 @@ const PatentApplication = () => {
 
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white text-black dark:bg-slate-800 dark:text-white p-6 rounded-lg shadow-lg">
             <h3 className="text-lg font-medium">Success</h3>
             <p>Your application has been submitted successfully!</p>
             <button onClick={handleClosePopup} className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
