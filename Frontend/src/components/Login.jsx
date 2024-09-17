@@ -44,7 +44,7 @@ const Login = () => {
                 </svg>
                 <input type="password" className="flex-grow bg-white text-black" placeholder="Password" />
             </label>
-            <Link to='/signup'><span className=' text-blue-500 cursor-pointer hover:text-black dark:hover:text-white'>Forget password?</span></Link>
+            <Link to=''><span className=' text-blue-500 cursor-pointer hover:text-black dark:hover:text-white'>Forget password?</span></Link>
 
             </div>
             <div>
