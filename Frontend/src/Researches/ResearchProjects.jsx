@@ -30,7 +30,7 @@ const ResearchProject = () => {
     <>
       <Navbar />
       <div className='min-h-screen flex items-center justify-center bg-[url("/img1.png")] bg-cover md:bg-center bg-[right] bg-fixed top-0 left-0 w-full h-full z-0 dark:bg-[url("/img2.png")] dark:bg-cover md:dark:bg-[center_top] dark:bg-[right] dark:bg-fixed pt-[140px] dark:text-black pb-[20px]'>
-        <div className="container mx-auto bg-white p-5 shadow-md w-full md:max-w-3xl max-w-[300px]  rounded-md">
+        <div className="container mx-auto bg-white p-5 shadow-md w-full md:max-w-3xl max-w-[360px]  rounded-md">
           <h1 className='text-center text-2xl font-bold p-[1px] text-black'>RESEARCH PROJECTS</h1>
           <hr className='mt-[20px] pb-[20px]'/>
           <div className="mt-4 mb-4 flex justify-center items-center gap-4 flex-col md:flex-row">

@@ -110,7 +110,7 @@ const PatentApplication = () => {
     <>
       <Navbar />
       <div className="min-h-screen flex items-center justify-center bg-[url('/img1.png')] bg-cover md:bg-center bg-[right] bg-fixed top-0 left-0 w-full h-full z-0 dark:bg-[url('/img2.png')] dark:bg-cover md:dark:bg-[center_top] dark:bg-[right] dark:bg-fixed pt-[140px] text-black pb-[20px]">
-        <div className="bg-white p-8 rounded-lg shadow-md w-full md:max-w-3xl max-w-[300px] ">
+        <div className="bg-white p-8 rounded-lg shadow-md w-full md:max-w-3xl max-w-[360px] ">
           <h2 className="text-2xl font-semibold text-center mb-6 text-gray-900">PATENT APPLICATION</h2>
           <hr className='pb-[20px]'/>
           <form onSubmit={handleSubmit} className="space-y-6">

@@ -1,13 +1,25 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import Login from './Login'
 const SignUp = () => {
+    useEffect(() => {
+        const handleResize = () => {
+          document.body.style.height = `${window.innerHeight}px`;
+        };
+      
+        window.addEventListener('resize', handleResize);
+      
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+      
   return (
     <>
     <div className="h-screen bg-[url('/img1.png')] bg-cover md:bg-center bg-[right] bg-fixed top-0 left-0 w-full z-0 dark:bg-[url('/img2.png')] dark:bg-cover md:dark:bg-[center_top] dark:bg-[right] dark:bg-fixed">
-    <div className='flex items-center justify-center h-screen'>
+    <div className='flex items-center justify-center h-screen overflow-y-auto'>
     <div className="card bg-base-100 shadow-2xl">
-    <div className="bg-white dark:bg-slate-800 rounded-[15px] shadow-md  md:w-[700px] w-[350px] md:p-[70px] p-8">
+    <div className="bg-white dark:bg-slate-800 rounded-[15px] shadow-md  md:w-[700px] w-[350px] md:p-[70px] p-8 min-h-[50vh]">
     <Link to='/'><button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-black dark:text-white">✕</button></Link>
         <h2 className="text-2xl font-bold text-center mb-6 text-black dark:text-white">Create An Account</h2>
         <div className='md:flex text-center space-x-2 items-center justify-center mb-3 ml-9 space-y-4 md:ml-0 md:space-y-0'>
