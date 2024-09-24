@@ -32,7 +32,7 @@ function Banner() {
             Welcome to the Gujarat Research and Innovation-Hub, where cutting-edge research meets transformative innovation. We unite researchers, innovators, and industry leaders to create impactful solutions and tackle global challenges. Join us in driving progress and shaping the future with groundbreaking ideas and practical applications.
             </p>
           </div>
-          <button className="btn mt-6 btn-secondary text-black  dark:text-white" onClick={handleScroll}>Get Started</button>
+          <button className="btn mt-6 btn-secondary text-black  dark:text-white animate-pulse" onClick={handleScroll}>Get Started</button>
         </div>
         <div className=" order-1 w-full mt-20 md:w-1/2">
           {/* <img
@@ -75,6 +75,17 @@ function Banner() {
 
         .animate-pulse {
           animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+            }
         }
       `}</style>
     </>

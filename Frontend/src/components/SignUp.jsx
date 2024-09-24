@@ -6,16 +6,16 @@ const SignUp = () => {
     <>
     <div className="h-screen bg-[url('/img1.png')] bg-cover md:bg-center bg-[right] bg-fixed top-0 left-0 w-full z-0 dark:bg-[url('/img2.png')] dark:bg-cover md:dark:bg-[center_top] dark:bg-[right] dark:bg-fixed">
     <div className='flex items-center justify-center h-screen'>
-    <div className="card bg-base-100 w-[400px] md:w-5/12 shadow-2xl">
-    <div className="card-body bg-white dark:bg-slate-800 rounded-md">
+    <div className="card bg-base-100 shadow-2xl">
+    <div className="bg-white dark:bg-slate-800 rounded-[15px] shadow-md  md:w-[700px] w-[350px] md:p-[70px] p-8">
     <Link to='/'><button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-black dark:text-white">✕</button></Link>
         <h2 className="text-2xl font-bold text-center mb-6 text-black dark:text-white">Create An Account</h2>
         <div className='md:flex text-center space-x-2 items-center justify-center mb-3 ml-9 space-y-4 md:ml-0 md:space-y-0'>
-            <label className="input input-bordered flex items-center gap-2 md:w-5/12 w-10/12 ml-2 md:ml-0 bg-white">
+            <label className="input input-bordered flex items-center gap-2 md:w-[230px] w-[195px] ml-2 md:ml-0 bg-white">
         
         <input type="text" className="grow bg-white  text-black" placeholder="FirstName" />
         </label>
-        <label className="input input-bordered flex items-center gap-2 md:w-5/12 w-10/12 bg-white">
+        <label className="input input-bordered flex items-center gap-2 md:w-[230px] w-[195px] bg-white">
         
         <input type="text" className="grow bg-white text-black" placeholder="LastName" />
         </label>
@@ -50,7 +50,7 @@ const SignUp = () => {
 
         </div>
 
-        <div className="flex items-center space-x-2 md:pl-28 mt-5 pl-2">
+        <div className="flex items-center space-x-2  justify-center mt-5 pl-2">
             <input
             type="checkbox"
             id="terms"

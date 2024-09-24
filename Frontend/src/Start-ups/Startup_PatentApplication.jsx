@@ -110,13 +110,13 @@ const Startup_PatentApplication = () => {
     <>
       <Navbar />
       <div className="min-h-screen flex items-center justify-center bg-[url('/img1.png')] bg-cover md:bg-center bg-[right] bg-fixed top-0 left-0 w-full h-full z-0 dark:bg-[url('/img2.png')] dark:bg-cover md:dark:bg-[center_top] dark:bg-[right] dark:bg-fixedpt-[140px] text-black pb-[20px] pt-[140px]">
-        <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
+        <div className="bg-white p-8 rounded-lg shadow-md w-full md:max-w-3xl max-w-[300px] ">
           <h2 className="text-2xl font-semibold text-center mb-6 text-gray-900">START-UP PATENT APPLICATION</h2>
           <hr className='mt-[20px] pb-[20px]'/>
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Applicant Information */}
             <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
-              <div className="sm:col-span-1">
+              <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
                 <div className="mt-2">
                   <input 

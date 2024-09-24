@@ -1,0 +1,114 @@
+.newsletter-form {
+    --primary: #00fffc;
+    --input-placeholder: #A6ACCD;
+    --input-text: #000;
+    --background: #fff;
+    --button-text: #000;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    background: var(--background);
+    border-radius: 9px;
+    padding-right: 4px;
+    transition: box-shadow 0.25s;
+  }
+  
+  .newsletter-form input,
+  .newsletter-form button {
+    background: none;
+    outline: none;
+    display: block;
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+  
+  .newsletter-form input {
+    width: 100%;
+    padding: 12px 12px 12px 16px;
+    color: var(--input-text);
+    font-weight: 400;
+  }
+  
+  .newsletter-form button {
+    position: relative;
+    padding: 8px 0;
+    min-width: 100px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--button-text);
+    border-radius: 7px;
+    transition: opacity 0.25s;
+  }
+  
+  .newsletter-form button .plane,
+  .newsletter-form button .trails {
+    position: absolute;
+  }
+  
+  .newsletter-form button .plane {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .newsletter-form button .plane .left,
+  .newsletter-form button .plane .right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .newsletter-form button .plane .left:before,
+  .newsletter-form button .plane .left:after,
+  .newsletter-form button .plane .right:before,
+  .newsletter-form button .plane .right:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary);
+  }
+  
+  .newsletter-form button .trails {
+    display: block;
+    width: 33px;
+    height: 64px;
+    top: -4px;
+    left: 16px;
+    stroke: rgba(39, 94, 254, 0.15);
+    stroke-linecap: round;
+    stroke-width: 2;
+    stroke-dasharray: 57px;
+  }
+  
+  .newsletter-form button span.success {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    transform: translateX(-12px);
+    opacity: 0;
+    color: var(--button-text);
+  }
+  
+  .newsletter-form button span.success svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--button-text);
+    stroke-dasharray: 14px;
+  }
+  

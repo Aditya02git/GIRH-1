@@ -30,81 +30,90 @@ const Research = () => {
           <main className="main-content">
 
             
-            <section className="card1">
-              <h2
-                onClick={() => toggleDropdown('patent')}
-                className="cursor-pointer flex justify-between items-center text-black font-bold text-[14px]"
-              >
-                Patent
-                <svg
-                  className={`w-4 h-4 transform transition-transform duration-300 ${openSections['patent'] ? 'rotate-180' : 'rotate-0'}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </h2>
-              <div
-                className={`transition-max-height duration-300 ease-in-out overflow-hidden bg-white dark:bg-slate-800  rounded-md md:text[15px] text-[10px] ${openSections['patent'] ? 'max-h-22' : 'max-h-0'}`}
-              >
-                <ul tabIndex={0} className="md:space-y-3 p-2">
+          <section className="card1">
+            <h2
+              onClick={() => document.getElementById('patent_modal').showModal()}
+              className="cursor-pointer flex justify-between items-center text-black font-bold text-[12px] md:text-[16px]">Patent</h2>
+
+            <dialog id="patent_modal" className="modal">
+              <div className="modal-box bg-gray-300 dark:bg-slate-800">
+                <form method="dialog">
+                  <button
+                    className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-black dark:text-white"
+                    onClick={() => document.getElementById('patent_modal').close()}>
+                    ✕
+                  </button>
+                </form>
+                <ul className="space-y-3 p-2">
                   <li>
-                    <Link to="/patent" className="block p-2 hover:bg-gray-100 rounded-md dark:hover:bg-slate-700 text-black text-[7px] md:text-[10px] dark:text-white">Patent Lists</Link>
+                    <Link
+                      to="/patent"
+                      className="font-semibold block p-2 hover:bg-gray-100 rounded-md dark:hover:bg-slate-700 text-[14px] md:text-[16px] dark:text-white">
+                      &#8680; Patent Lists
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/patentapplication" className="block p-2 hover:bg-gray-100 rounded-md dark:hover:bg-slate-700 text-black text-[7px] md:text-[10px] dark:text-white">Patent Application</Link>
+                    <Link
+                      to="/patentapplication"
+                      className="font-semibold block p-2 hover:bg-gray-100 rounded-md dark:hover:bg-slate-700 text-[14px] md:text-[16px] dark:text-white">
+                      &#8680; Patent Application
+                    </Link>
                   </li>
                 </ul>
               </div>
-            </section>
+            </dialog>
+          </section>
+
 
             
               <section class="card1">
-                  <Link to={"/researchprojects"}><h2 className='pb-[50px] text-black font-bold text-[14px] text-center'>Research Projects</h2></Link>
+                  <Link to={"/researchprojects"}><h2 className=' text-black font-bold text-[12px] md:text-[16px] text-center'>Research Projects</h2></Link>
               </section>
             
 
             
               <section class="card1">
-                  <Link to={"/intellectualproperty"}><h2 className='pb-[50px] text-black font-bold text-[14px] text-center'>Intellectual Property</h2></Link>
+                  <Link to={"/intellectualproperty"}><h2 className=' text-black font-bold text-[12px] md:text-[16px] text-center'>Intellectual Property</h2></Link>
               </section>
             
 
-            <section className="card1">
-              <h2
-                onClick={() => toggleDropdown('funding')}
-                className="cursor-pointer flex justify-between items-center text-black font-bold text-[14px] "
-              >
-                Funding
-                <svg
-                  className={`w-4 h-4 transform transition-transform duration-300 ${openSections['funding'] ? 'rotate-180' : 'rotate-0'}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </h2>
-              <div
-                className={`transition-max-height duration-300 ease-in-out overflow-hidden bg-white dark:bg-slate-800 rounded-md  md:text[15px] ${openSections['funding'] ? 'max-h-17' : 'max-h-0'}`}
-              >
-                <ul tabIndex={0} className="md:space-y-3 p-2">
+              <section className="card1">
+            <h2
+              onClick={() => document.getElementById('funding_modal').showModal()}
+              className="cursor-pointer flex justify-between items-center text-black font-bold text-[12px] md:text-[16px]">Funding</h2>
+
+            <dialog id="funding_modal" className="modal">
+              <div className="modal-box bg-gray-300 dark:bg-slate-800">
+                <form method="dialog">
+                  <button
+                    className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-black dark:text-white"
+                    onClick={() => document.getElementById('funding_modal').close()}>
+                    ✕
+                  </button>
+                </form>
+                <ul className="space-y-3 p-2">
                   <li>
-                    <Link to="/fundingrequest" className="block p-2 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md text-[7px] md:text-[10px]  text-black dark:text-white">Funding Request</Link>
+                    <Link
+                      to="/fundinghistory"
+                      className=" font-semibold block p-2 hover:bg-gray-100 rounded-md dark:hover:bg-slate-700 text-[14px] md:text-[16px] dark:text-white">
+                      &#8680; Funding History
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/fundinghistory" className="block p-2 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md text-[7px] md:text-[10px]  text-black dark:text-white">Funding History</Link>
+                    <Link
+                      to="/fundingrequest"
+                      className="font-semibold block p-2 hover:bg-gray-100 rounded-md dark:hover:bg-slate-700 text-[14px] md:text-[16px] dark:text-white">
+                      &#8680; Funding Request
+                    </Link>
                   </li>
                 </ul>
               </div>
-            </section>
+            </dialog>
+          </section>
 
             
               <section class="card1">
-                  <Link to={"/community"}><h2 className='pb-[50px] text-black font-bold text-[14px]'>Community</h2></Link>
+                  <Link to={"/community"}><h2 className=' text-black font-bold text-[12px] md:text-[16px] text-center'>Community</h2></Link>
               </section>
             
           </main>

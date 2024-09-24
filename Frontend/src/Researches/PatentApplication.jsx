@@ -110,13 +110,13 @@ const PatentApplication = () => {
     <>
       <Navbar />
       <div className="min-h-screen flex items-center justify-center bg-[url('/img1.png')] bg-cover md:bg-center bg-[right] bg-fixed top-0 left-0 w-full h-full z-0 dark:bg-[url('/img2.png')] dark:bg-cover md:dark:bg-[center_top] dark:bg-[right] dark:bg-fixed pt-[140px] text-black pb-[20px]">
-        <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
+        <div className="bg-white p-8 rounded-lg shadow-md w-full md:max-w-3xl max-w-[300px] ">
           <h2 className="text-2xl font-semibold text-center mb-6 text-gray-900">PATENT APPLICATION</h2>
           <hr className='pb-[20px]'/>
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Applicant Information */}
             <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
-              <div className="sm:col-span-1">
+              <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
                 <div className="mt-2">
                   <input 
@@ -182,18 +182,17 @@ const PatentApplication = () => {
                 </div>
               </div>
 
-              <div className="sm:col-span-2">
-                <label className="block text-sm font-medium leading-6 text-gray-900">Invention Details</label>
-                <div className="mt-2">
-                  <textarea
-                    value={inventionDetails} 
-                    onChange={(e) => setInventionDetails(e.target.value)}
-                    rows={3}
-                    className="block w-full rounded-md bg-gray-100 border-2 p-1 border-gray-600 h-8 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                    required
-                  />
-                </div>
-                <p className="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about your invention.</p>
+                {/* Project Description */}
+                <div className="sm:col-span-2">
+                <label className="block text-sm font-medium text-gray-900">Invention Details</label>
+                <textarea
+                  value={inventionDetails} 
+                  onChange={(e) => setInventionDetails(e.target.value)}
+                  rows={3}
+                  className="block w-full rounded-md bg-gray-100 border-2 p-1 border-gray-600"
+                  required
+                />
+                <p className="mt-2 text-sm text-gray-600">Write a few sentences about your invention.</p>
               </div>
 
               <div className="sm:col-span-2">
